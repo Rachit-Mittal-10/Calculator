@@ -23,8 +23,12 @@ const pressEqual = function(){
     display.value = ans;
 }
 
+const splitIntoDigits = function(input){
+    
+}
+
 const calculate = function(input){
-    let characters = input.split(operators);
-    console.log(characters);
+    let charaters = splitIntoDigits(input);
+    console.log(charaters);
     return "";
 }
