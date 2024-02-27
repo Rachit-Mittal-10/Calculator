@@ -47,7 +47,9 @@ const pressEqual = function(){
     userInput.push(input_num);
     let op1 = userInput[0];
     let op2 = userInput[1];
-    display.value += calculate(op1,op2,previousOperator);
+    let result = calculate(op1,op2,previousOperator);
+    clearHardDisplay();
+    display.value += result;
 }
 
 const calculate = function(op1,op2,operator){
